@@ -252,7 +252,9 @@
 
         updateTrack: function() {
             this.audio.src = this.player.currentTrackUrl();
-            if (this.player.get('state') == 'play') { this.audio.play(); }
+            if (this.player.get('state') == 'play') {
+                this.audio.play();
+            }
         },
 
         queueAlbum: function(album) {
